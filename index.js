@@ -25,7 +25,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // connect to database
-mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect("mongodb+srv://test:test@filedb.tpz8xp7.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to db');
 }
 );
