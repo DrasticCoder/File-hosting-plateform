@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const ejs = require('ejs');
 const multer = require('multer');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 const File = require('./models/File');
 const { urlencoded } = require('express');
